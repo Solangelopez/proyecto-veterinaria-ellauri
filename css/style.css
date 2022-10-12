@@ -1,0 +1,201 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@import url('https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@1,200&family=Montserrat:ital,wght@1,500&display=swap');
+
+header{
+    background-color: rgb(44, 148, 150);
+}
+.logo img{
+    float: left;
+    margin-top: 20px;
+    width: 10%;
+    height: 100px;
+}
+.navBar li{
+    list-style: none;
+    display: inline;
+    padding: 10px
+}
+.navBar li a{
+    text-decoration: none;
+    color: black;
+}
+.navBar{
+    background-color: rgba(165, 176, 179, 0.548); 
+    font-family: "Inter+Tight", sans-serif;
+    font-size: 18px;
+}
+main{
+    background-color: rgb(44, 148, 150);
+}
+main h1{
+    font-size: 40px;
+    text-align: center;
+    color: burlywood;
+    font-family: "Inter+Tight", sans-serif;
+}
+.catLove{
+    width: 400px;
+    height: 200px;
+    border-radius: 70%;
+    position: relative;
+    left: 28%;
+}
+.servicios li{
+list-style: circle;
+padding-top: 10px;
+color: beige;
+font-size: 30px;
+font-family: "inter+-Tight", sans-serif;
+text-align: left;
+margin-top: 50px;
+margin-left: 200px;
+}
+.fearFree{
+    position: relative;
+    margin-left: 50%;
+    margin-top: -500px;
+    margin-bottom: 300px;
+}
+.pagos{
+    margin-top: 60px;
+    text-align: center;
+    color: beige;
+    font-size: 20px;
+}
+.banner h1{
+    color: rgb(243, 174, 13);
+    font-size: 100px;
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+}
+.banner{
+    width: 100%;
+    height: 400px;
+    background-image: url(../img/banner-original.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.slogan h2{
+    text-align: center;
+}
+.slogan{
+    
+    color: beige;
+    font-size: 25px;   
+    text-indent:20px;
+    line-height: 2;
+    font-family: 'Inter+Tight', sans-serif;
+}
+.novedades h2{
+    text-align: left;
+    margin-left: 20px;
+}
+.news{
+    text-align: left;
+    margin-left: 20px;
+}
+section h2{
+    color: burlywood;
+    font-size: 50px;
+    font-family: "Inter+Tight", sans-serif;
+    text-align: center;
+}
+article p{
+    color: beige;
+    font-size: 20px;
+    font-family: "Inter+Tight", sans-serif;
+}
+.novedades h3{
+    text-align:initial;
+    font-family: "Inter+Tight", sans-serif;
+    font-size: 20px;
+    margin-top: 30px;
+    color: burlywood;
+}
+article img{
+    width: 100px;
+    height: 100px;
+}
+.nutricion p{
+    font-size: 30px;
+    font-family: "Inter+Tight", sans-serif;
+    text-align: center;
+    margin-top: 60px;
+    color: beige;
+    border: beige 1px solid;
+}
+.raciones img{
+    margin-top: 200px;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    display: flex;
+}
+.raciones p{    
+    font-size: 20px;
+    font-family: "Inter+Tight", sans-serif;
+    color: beige;
+    text-align-last: center;
+    
+}
+.food{
+    display: inline-flex;
+    gap: 60px;
+    margin-left: 300px;
+    margin-bottom: 20%;
+}
+.accesorios img{
+    margin-top: 200px;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    display: flex;
+}
+.accesorios p{
+    font-size: 20px;
+    font-family: "Inter+Tight", sans-serif;
+    color: beige;
+    text-align-last: center;
+}
+.sectionOne{
+    display: inline-flex;
+    gap: 60px;
+    margin-left: 190px;
+    margin-top: 5px;
+}
+.sectionTwo{
+    display: inline-flex;
+    gap: 60px;
+    margin-left: 525px;
+    margin-bottom: 250px;
+}
+.formulario{
+    margin-top: 100px;
+    
+    text-align: center;
+}
+.formulario p{
+    font-size: 30px;
+    color: beige;
+    font-family: "Inter+Tight", sans-serif;
+}
+.formulario input{
+    font-size: 20px;
+}
+footer ul li{
+    list-style: none;
+    display: inline-flex;
+    justify-content: right;
+    gap: 20px;
+    margin-right: 10px;
+}
+footer{
+    background-color: rgb(165, 176, 179);
+}
+.container{
+    text-align: center;
+}

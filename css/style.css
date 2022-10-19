@@ -9,51 +9,79 @@ header{
     background-color: rgb(44, 148, 150);
 }
 .logo img{
-    float: left;
-    margin-top: 20px;
-    width: 10%;
-    height: 100px;
+   width: 170px;
+   height: 150px;
 }
-.navBar li{
-    list-style: none;
-    display: inline;
-    padding: 10px
+.navbar li{
+    font-size: 20px;
+    font-weight: bold;
+    background-color: rgba(241, 232, 232, 0.466);
+    border-radius: 10px;
 }
-.navBar li a{
-    text-decoration: none;
-    color: black;
+.navbar .navbar-nav .nav-link:hover{
+    background-color: rgb(235, 191, 81);
+    color:antiquewhite;
+    border-radius: 10px;
 }
-.navBar{
-    background-color: rgba(165, 176, 179, 0.548); 
-    font-family: "Inter+Tight", sans-serif;
-    font-size: 18px;
+
+.navbar .navbar-nav .nav-link{
+    padding: 0.5em;
 }
+
 main{
-    background-color: rgb(44, 148, 150);
+    background: #134E5E;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #71B280, #134E5E);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #71B280, #134E5E); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}    
+
+/*servicios*/
+.divServicios{
+    display: grid;
+    width: 100%;
+    height: 100vh;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 20% auto;
+    grid-template-areas:
+    "header"
+    "main"
+    "main"
+    "footer"
 }
-main h1{
-    font-size: 40px;
+.mainServicios{
+    grid-area: main;
+}
+.footerServicios{
+    grid-area: footer;
+}
+
+.serviceBanner{
+    width: 100%;
+    height: 100%;
+    background-image: url(../img/catVet.jpg);
+    background-position: center;
+    background-size: 100%;
+    grid-area: header;
+    
+}
+.serviceBanner h1{
+    font-size: 60px;
     text-align: center;
-    color: burlywood;
+    color: rgb(233, 159, 23);
     font-family: "Inter+Tight", sans-serif;
+    margin-top: 60px;
 }
-.catLove{
-    width: 400px;
-    height: 200px;
-    border-radius: 70%;
-    position: relative;
-    left: 28%;
-}
+
 .servicios li{
 list-style: circle;
-padding-top: 10px;
+padding-top: 30px;
 color: beige;
 font-size: 30px;
 font-family: "inter+-Tight", sans-serif;
 text-align: left;
-margin-top: 50px;
 margin-left: 200px;
+margin-top: 30px;
 }
+
 .fearFree{
     position: relative;
     margin-left: 50%;
@@ -65,7 +93,9 @@ margin-left: 200px;
     text-align: center;
     color: beige;
     font-size: 20px;
+    border: beige 1px solid;
 }
+/* index*/
 .banner h1{
     color: rgb(243, 174, 13);
     font-size: 100px;
@@ -74,29 +104,65 @@ margin-left: 200px;
 }
 .banner{
     width: 100%;
-    height: 400px;
+    height: 100%;
     background-image: url(../img/banner-original.jpg);
     background-position: center;
-    background-size: cover;
+    background-size: 150%;
+    animation: movimiento 10s infinite linear alternate;
+    grid-area: header;
+}
+@keyframes movimiento{
+    from{
+        background-position: bottom;
+    }
+    to{
+        background-position: top;
+    }
+}
+.mainIndex{
+    grid-area: main;
+}
+.footerIndex{
+    grid-area: footer;
+}
+.divIndex{
+    display: grid;
+    width: 100%;
+    height: 100vh;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 60% auto;
+    grid-template-areas:
+    "header"
+    "main"
+    "main"
+    "footer"
 }
 .slogan h2{
     text-align: center;
+    font-size: 50px;
+    
 }
 .slogan{
-    
     color: beige;
     font-size: 25px;   
     text-indent:20px;
     line-height: 2;
     font-family: 'Inter+Tight', sans-serif;
+    margin-left: 20px;
+    margin-right: 20px;
 }
 .novedades h2{
-    text-align: left;
+    text-align: center;
     margin-left: 20px;
+    margin-top: 50px;
 }
 .news{
-    text-align: left;
-    margin-left: 20px;
+    margin-top: 60px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between 100px;
+    margin-left: 30px;
+    margin-bottom: 20px;
 }
 section h2{
     color: burlywood;
@@ -105,26 +171,57 @@ section h2{
     text-align: center;
 }
 article p{
-    color: beige;
-    font-size: 20px;
+    color: rgb(43, 35, 15);
+    font-size: 15px;
     font-family: "Inter+Tight", sans-serif;
 }
 .novedades h3{
-    text-align:initial;
     font-family: "Inter+Tight", sans-serif;
     font-size: 20px;
-    margin-top: 30px;
-    color: burlywood;
+    color: rgb(105, 82, 51);
 }
 article img{
     width: 100px;
     height: 100px;
 }
+/* alimentos*/
+.divAlimentos{
+    display: grid;
+    width: 100%;
+    height: 100vh;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 60% auto;
+    grid-template-areas:
+    "header"
+    "main"
+    "main"
+    "footer"
+}
+.foodBanner{
+    width: 100%;
+    height: 100%;
+    background-image: url(../img/petfood.jpg);
+    background-position: center;
+    background-size: cover;
+    grid-area: header;
+}
+.mainAlimentos{
+     grid-area: main;
+}
+.footerAlimentos{
+    grid-area: footer;
+}
+.foodBanner h1{
+    font-size: 60px;
+    text-align: center;
+    color: rgb(252, 228, 15);
+    font-family: "Inter+Tight", sans-serif;
+    margin-top: 200px;
+}
 .nutricion p{
     font-size: 30px;
     font-family: "Inter+Tight", sans-serif;
     text-align: center;
-    margin-top: 60px;
     color: beige;
     border: beige 1px solid;
 }
@@ -148,12 +245,48 @@ article img{
     margin-left: 300px;
     margin-bottom: 20%;
 }
+/*accesorios*/
+.divAccesorios{
+    display: grid;
+    width: 100%;
+    height: 100vh;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 60% auto;
+    grid-template-areas:
+    "header"
+    "main"
+    "main"
+    "footer"
+}
+.bannerAccesorios{
+    width: 100%;
+    height: 300px;
+    background-image: url(../img/accesorios.webp);
+    background-position: center;
+    background-size: 100%;
+    grid-area: header;
+}
+.mainAccesorios{
+    grid-area: main
+    
+    
+}
+.footerAccesorios{
+    grid-area: footer;
+}
 .accesorios img{
     margin-top: 200px;
-    width: 300px;
-    height: 300px;
+    width: 200px;
+    height: 200px;
     border-radius: 50%;
     display: flex;
+}
+.bannerAccesorios h1{
+    font-size: 60px;
+    text-align: center;
+    margin-top: 70px;
+    color: rgb(238, 180, 20);
+    font-family: "Inter+Tight", sans-serif;
 }
 .accesorios p{
     font-size: 20px;
@@ -164,38 +297,302 @@ article img{
 .sectionOne{
     display: inline-flex;
     gap: 60px;
-    margin-left: 190px;
-    margin-top: 5px;
+    margin-left: 450px;
+    margin-top: -30px;
 }
 .sectionTwo{
-    display: inline-flex;
+    display: flex;
+    flex-direction: row;
     gap: 60px;
-    margin-left: 525px;
-    margin-bottom: 250px;
+    margin-left: 600px;
+    margin-top: -30px
+    
+}
+/*contacto*/
+.divContacto{
+    display: grid;
+    width: 100%;
+    height: 100vh;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 20% auto;
+    grid-template-areas:
+    "header"
+    "main"
+    "main"
+    "footer"
+}
+.contactBanner{
+    width: 100%;
+    height:100%;
+    background-image: url(../img/vetContact.webp);
+    background-position: bottom;
+    background-size: cover;
+    grid-area: header;
+}
+.footerContacto{
+    grid-area: footer;
+}
+.mainContacto{
+    grid-area: main;
+}
+.contactBanner h1{
+    font-size: 60px;
+    text-align: center;
+    color: rgb(90, 67, 34);
+    font-family: "Inter+Tight", sans-serif;
+    margin-top: 120px;
 }
 .formulario{
-    margin-top: 100px;
-    
+    width: 300px;
+    height: 1200px;
     text-align: center;
+    padding-top: 20px;
+    position: relative;
+    right: -700px;
+    
+    
 }
 .formulario p{
-    font-size: 30px;
+    font-size: 25px;
     color: beige;
     font-family: "Inter+Tight", sans-serif;
+    padding-top: 20px;
+    margin-bottom: 30px;
 }
+
 .formulario input{
-    font-size: 20px;
+    font-size: 15px;
 }
+/*footer*/
 footer ul li{
     list-style: none;
     display: inline-flex;
     justify-content: right;
-    gap: 20px;
+    gap: 300px;
     margin-right: 10px;
 }
 footer{
-    background-color: rgb(165, 176, 179);
+    background-color: rgba(165, 176, 179, 0.548);
 }
 .container{
     text-align: center;
 }
+
+
+
+/* responsive 1200px*/
+@media (max-width: 1200px){
+    /*index*/
+    .mainIndex{
+       grid-template-columns: 1fr;
+       grid-template-rows: 1fr 2fr 2fr auto;
+       grid-template-areas: 
+       "header"
+       "main"
+       "main"
+       "footer"
+       ;
+   }
+   .banner h1{
+       font-size: 80px;
+       display: flex;
+       flex-direction: row;
+       justify-content: center;
+       margin-top: 20px;
+   }
+   .slogan h2{
+       font-size: 40px;
+   }
+   .slogan p{
+       font-size: 25px;
+   }
+   .novedades h2{
+       font-size: 40px;
+   }
+   .news h3{
+     font-size: 20px;
+   }
+   .news p{
+       font-size: 15px;
+   }
+   .news img{
+   width: 100px;
+   height: 100px;
+   }
+   /*servicios*/
+   .mainServicios{
+       grid-template-columns: 1fr;
+       grid-template-rows: 1fr 2fr 2fr auto;
+       grid-template-areas: 
+       "header"
+       "main"
+       "main"
+       "footer"
+       ;
+   }
+   .serviceBanner h1{
+       font-size: 40px
+   }
+   .servicios li{
+       margin-left: 3px;
+       font-size: 25px;
+       padding-top: 10px;    
+   }
+   .servicios{
+       width: 400px;
+       height: 200px;
+   }
+    .fearFree iframe{
+      max-width: 80%;
+      margin-top: 350px;
+   }
+   .pagos{
+       
+       margin-bottom: 100px;
+   }
+}
+
+
+/* responsive 768px*/
+
+@media(max-width: 768px){
+    /*index*/
+    .mainIndex{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 2fr 2fr auto;
+        grid-template-areas: 
+        "header"
+        "main"
+        "main"
+        "footer"
+        ;
+    }
+    .banner h1{
+        font-size: 50px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin-top: 20px;
+    }
+    .slogan h2{
+        font-size: 35px;
+    }
+    .slogan p{
+        font-size: 22px;
+    }
+    .novedades h2{
+        font-size: 35px;
+    }
+    .news h3{
+      font-size: 20px;
+    }
+    .news p{
+        font-size: 13px;
+    }
+    .news img{
+    width: 85px;
+    height: 65px;
+    }
+    /*servicios*/
+    .mainServicios{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 2fr 2fr auto;
+        grid-template-areas: 
+        "header"
+        "main"
+        "main"
+        "footer"
+        ;
+    }
+    .serviceBanner{
+        background-size: 150%;
+    }
+    .serviceBanner h1{
+        font-size: 35px
+    }
+    .servicios li{
+        margin-left: 3px;
+        font-size: 25px;
+        padding-top: 10px;    
+    }
+    .servicios{
+        width: 600px;
+        height: 400px;
+    }
+     .fearFree iframe{
+       max-width: 70%;
+       margin-top: 150px;
+    }
+    .pagos{
+        
+        margin-bottom: 100px;
+    }
+}
+
+/* responsive 576px*/
+
+@media (max-width: 576px){
+    /*index*/
+    .mainIndex{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 2fr 2fr auto;
+        grid-template-areas: 
+        "header"
+        "main"
+        "main"
+        "footer"
+        ;
+    }
+    .banner h1{
+        font-size: 40px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin-top: 5px;
+    }
+    .slogan h2{
+        font-size: 25px;
+    }
+    .slogan p{
+        font-size: 18px;
+    }
+    .novedades h2{
+        font-size: 25px;
+    }
+    .news h3{
+        font-size: 15px
+    }
+    .news p{
+        font-size: 10px;
+    }
+    .news img{
+        width: 80px;
+        height: 60px;
+    }
+    /*servicios*/
+    .divServicios{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 25% auto;
+        grid-template-areas: 
+        "header"
+        "main"
+        "main"
+        "footer"
+        ;
+    }
+    .serviceBanner{
+        background-size: 150%;
+    }
+    .serviceBanner h1{
+        font-size: 30px;
+        margin-top: 120px;
+        color: rgb(199, 139, 28);
+    }
+    .servicios li{
+        margin-left: 3px;
+        font-size: 20px;
+        padding-top: 10px;    
+    }
+}
+
+

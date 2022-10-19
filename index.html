@@ -1,85 +1,122 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Inicio</title>
-    <link rel="stylesheet" href="./css/style.css">
-
-    <link rel="shortcut icon" href="./img/logo-vet.png" type="image/x-icon">
+    <link rel="stylesheet" href="./css/style.css" />
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous"/>
+    <link rel="shortcut icon" href="./img/logo-vet.png" type="image/x-icon" />
     <title>Home</title>
-</head>
-
-<body>
-    <header class="banner">
-        <div class="logo">
-            <a href="./index.html" target="_blank"><img src="./img/logo-vet.png" />
-        </div>
-        <nav>
-            <ul class="navBar">
-                <li><a href="/index.html">Inicio</a></li>
-                <li><a href="./pages/servicios.html">Servicios</a></li>
-                <li><a href="./pages/alimentos.html">Alimentos</a></li>
-                <li><a href="./pages/accesorios.html">Accesorios</a></li>
-                <li><a href="./pages/contacto.html">Contacto</a></li>
-            </ul>
+  </head>
+ <body>
+    <div class="divIndex">
+      <header class="banner">
+        <nav class="navbar navbar-expand-lg bg-none">
+          <div class="offset-lg-1 container-fluid">
+            <a class="logo" href="./index.html"><img src="./img/logo-vet.png" alt=""/></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offset-lg-4 collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0 ml-auto">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="./index.html">Inicio</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" href="./pages/servicios.html">Servicios</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" href="./pages/alimentos.html">Alimentos</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" href="./pages/accesorios.html">Accesorios</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" href="./pages/contacto.html">Contacto</a>
+                </li>
+              </ul>
+            </div>
+          </div>
         </nav>
         <section>
-            <h1>Clínica Veterinaria Ellauri</h1>
+          <h1>Clínica Veterinaria Ellauri</h1>
         </section>
-    </header>
-    <main>
+      </header>
+      <main class="mainIndex">
         <section class="slogan">
-            <h2>El compromiso de proteger a tu mascota</h2>
-            <p> En Clínica Veterinaria Ellauri buscamos prevenir, diagnosticar, y tratar las patologías que puedan
-                surgir, así como también educar y acompañar a los propietarios en cada etapa de la vida de su mascota.
-                Perseguimos el objetivo de lograr animales sanos y felices, porque creemos que tener un animal en tu
-                vida te hace más humano.</p>
+          <h2>El compromiso de proteger a tu mascota</h2>
+          <p>
+            En Clínica Veterinaria Ellauri buscamos prevenir, diagnosticar, y
+            tratar las patologías que puedan surgir, así como también educar y
+            acompañar a los propietarios en cada etapa de la vida de su mascota.
+            Perseguimos el objetivo de lograr animales sanos y felices, porque
+            creemos que tener un animal en tu vida te hace más humano.
+          </p>
         </section>
-
         <section class="novedades">
-            <h2>Novedades</h2>
-            <section class="news">
-                <article>
-                    <div>
-                        <h3>Domicilios coordinados</h3>
-                        <img src="./img/agenda.png" alt="">
-                        <p>Realizamos consultas a domicilio y vacunaciones agendando previamente.</p>
-                    </div>
-                </article>
+          <h2>Novedades</h2>
+          <div class="news">
+            <section class="news1">
+              <article>
+                <div>
+                  <h3>Domicilios coordinados</h3>
+                  <img src="./img/agenda.png" alt="" />
+                  <p>
+                    Realizamos consultas a domicilio y vacunaciones agendando
+                    previamente.
+                  </p>
+                </div>
+              </article>
             </section>
-            <section class="news">
-                <article>
-                    <div>
-                        <h3>Exámenes colaterales y servicio de urgencias 24hs</h3>
-                        <img src="./img/colaterales.png" alt="">
-                        <p>Contamos con servicio tercerizado de análisis clínicos, Rx, ecografías, urgencias 24hs e
-                            internación.</p>
-                    </div>
-                </article>
+            <section class="news2">
+              <article>
+                <div>
+                  <h3>Exámenes colaterales</h3>
+                  <img src="./img/colaterales.png" alt="" />
+                  <p>
+                    Contamos con servicio tercerizado de análisis clínicos, Rx,
+                    ecografías, urgencias 24hs e internación.
+                  </p>
+                </div>
+              </article>
             </section>
-            <section class="news">
-                <article>
-                    <div>
-                        <h3>Envíos a domicilio</h3>
-                        <img src="./img/envios.png"">
-                        <p>Si vivís en la zona, te llevamos lo que estés necesitando a la puerta de tu casa.</p>
-                    </div>
-                </article>
+            <section class="news3">
+              <article>
+                <div>
+                  <h3>Envíos a domicilio</h3>
+                  <img src="./img/envios.png"">
+                  <p>
+                    Si vivís en la zona, te llevamos lo que estés necesitando a
+                    la puerta de tu casa.
+                  </p>
+                </div>
+              </article>
             </section>
+          </div>
         </section>
-
-    </main>
-    <footer>
-        <ul class=" container">
-                        <li><a href="https://es-la.facebook.com/pages/category/Veterinarian/Cl%C3%ADnica-Veterinaria-Ellauri-1892434861080156/"><img src="../img/facebook.png" alt=""></a></li>
-                        <li><a href="https://instagram.com/clinica_veterinaria_ellauri?igshid=YmMyMTA2M2Y="><img src="../img/instagram (1).png" alt=""></a></li>
-                        <li><a href="https://goo.gl/maps/YRV8KaNstwnHdVZX6"><img src="../img/map-pin (1).png" alt=""></a></li>
+      </main>
+      <footer class="footerIndex">
+        <ul class="container">
+          <li>
+            <a href="https://es-la.facebook.com/pages/category/Veterinarian/Cl%C3%ADnica-Veterinaria-Ellauri-1892434861080156/" target="_blank"><img src="../img/facebook.png" alt=""/></a>
+          </li>
+          <li>
+            <a href="https://instagram.com/clinica_veterinaria_ellauri?igshid=YmMyMTA2M2Y=" target="_blank"><img src="../img/instagram (1).png" alt=""/></a>
+          </li>
+          <li>
+            <a href="https://goo.gl/maps/YRV8KaNstwnHdVZX6" target="_blank"><img src="../img/map-pin (1).png" alt=""/></a>
+          </li>
         </ul>
-    </footer>
-
-</body>
-
+      </footer>
+    </div>
+    <!-- JavaScript Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>

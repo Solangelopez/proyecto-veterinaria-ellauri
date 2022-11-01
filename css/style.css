@@ -280,7 +280,6 @@ article img{
     width: 200px;
     height: 200px;
     border-radius: 50%;
-
 }
 .bannerAccesorios h1{
     font-size: 60px;
@@ -344,8 +343,6 @@ article img{
     padding-top: 20px;
     position: relative;
     right: -650px;
-    
-    
 }
 .formulario p{
     font-size: 25px;
@@ -612,7 +609,6 @@ footer{
     .food{
         flex-direction: column;
         align-items: center;
-        
     }
     .raciones img{
         margin-top: 15px;
@@ -634,7 +630,6 @@ footer{
     .bannerAccesorios h1{
         font-size: 40px;
 }
-
 .accesorios p{
     font-size: 15px;
 }
@@ -667,7 +662,6 @@ footer{
 .formulario input{
     font-size: 12px;
 }
-
 }
 
 /* responsive 576px*/
@@ -713,7 +707,7 @@ footer{
     /*servicios*/
     .divServicios{
         grid-template-columns: 1fr;
-        grid-template-rows: 1fr 25% auto;
+        grid-template-rows: 1fr 2fr 2fr auto;
         grid-template-areas: 
         "header"
         "main"
@@ -724,15 +718,25 @@ footer{
     .servicioBanner{
         background-size: 150%;
     }
-    .serviceBanner h1{
+    .servicioBanner h1{
         font-size: 25px;
         margin-top: 120px;
         color: rgb(199, 139, 28);
+    }
+    .servicios{
+        width: 100%;
+    }
+    .mainServicios{
+        min-height: 100vh;
+        
     }
     .servicios li{
         margin-left: 3px;
         font-size: 20px;
         padding-top: 10px;    
+    }
+    .pagos{
+        margin-top: -100px;
     }
     /*Alimentos*/
     .divAlimentos h1{
@@ -771,9 +775,9 @@ footer{
         "footer"
         ;
     }
-    .formulario{
-        margin-left: -500px;
-    }
+.formulario{
+    margin-left: -500px;
+}
 }
 
 

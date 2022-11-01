@@ -9,8 +9,8 @@ header{
     background-color: rgb(44, 148, 150);
 }
 .logo img{
-   width: 170px;
-   height: 150px;
+    width: 170px;
+    height: 150px;
 }
 .navbar li{
     font-size: 20px;
@@ -27,6 +27,9 @@ header{
 .navbar .navbar-nav .nav-link{
     padding: 0.5em;
 }
+.navbar .navbar-toggler{
+    border-color:  rgb(235, 191, 81);
+} 
 
 main{
     background: #134E5E;  /* fallback for old browsers */
@@ -54,7 +57,7 @@ main{
     grid-area: footer;
 }
 
-.serviceBanner{
+.servicioBanner{
     width: 100%;
     height: 100%;
     background-image: url(../img/catVet.jpg);
@@ -63,7 +66,7 @@ main{
     grid-area: header;
     
 }
-.serviceBanner h1{
+.servicioBanner h1{
     font-size: 60px;
     text-align: center;
     color: rgb(233, 159, 23);
@@ -206,7 +209,7 @@ article img{
     grid-area: header;
 }
 .mainAlimentos{
-     grid-area: main;
+    grid-area: main;
 }
 .footerAlimentos{
     grid-area: footer;
@@ -227,23 +230,23 @@ article img{
 }
 .raciones img{
     margin-top: 200px;
-    width: 300px;
-    height: 300px;
+    width: 200px;
+    height: 200px;
     border-radius: 50%;
-    display: flex;
 }
 .raciones p{    
     font-size: 20px;
     font-family: "Inter+Tight", sans-serif;
     color: beige;
-    text-align-last: center;
-    
+    text-align: center;
 }
 .food{
-    display: inline-flex;
-    gap: 60px;
-    margin-left: 300px;
-    margin-bottom: 20%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-flow: wrap;
+    gap: -50px;
+    margin-top: -20px;
 }
 /*accesorios*/
 .divAccesorios{
@@ -260,26 +263,24 @@ article img{
 }
 .bannerAccesorios{
     width: 100%;
-    height: 300px;
-    background-image: url(../img/accesorios.webp);
+    height: 100%;
+    background-image: url(../img/accesorios1.webp);
     background-position: center;
-    background-size: 100%;
+    background-size: cover;
     grid-area: header;
 }
 .mainAccesorios{
     grid-area: main
-    
-    
 }
 .footerAccesorios{
     grid-area: footer;
 }
 .accesorios img{
-    margin-top: 200px;
+    margin-top: 100px;
     width: 200px;
     height: 200px;
     border-radius: 50%;
-    display: flex;
+
 }
 .bannerAccesorios h1{
     font-size: 60px;
@@ -295,18 +296,12 @@ article img{
     text-align-last: center;
 }
 .sectionOne{
-    display: inline-flex;
-    gap: 60px;
-    margin-left: 450px;
-    margin-top: -30px;
-}
-.sectionTwo{
     display: flex;
     flex-direction: row;
-    gap: 60px;
-    margin-left: 600px;
-    margin-top: -30px
-    
+    justify-content: space-around;
+    flex-flow: wrap;
+    gap: 40px;
+    margin-top: -20px;
 }
 /*contacto*/
 .divContacto{
@@ -348,7 +343,7 @@ article img{
     text-align: center;
     padding-top: 20px;
     position: relative;
-    right: -700px;
+    right: -650px;
     
     
 }
@@ -364,12 +359,17 @@ article img{
     font-size: 15px;
 }
 /*footer*/
+
 footer ul li{
     list-style: none;
     display: inline-flex;
     justify-content: right;
     gap: 300px;
     margin-right: 10px;
+}
+footer ul li img{
+    width: 40px;
+    height: 40px;
 }
 footer{
     background-color: rgba(165, 176, 179, 0.548);
@@ -381,75 +381,141 @@ footer{
 
 
 /* responsive 1200px*/
-@media (max-width: 1200px){
+@media(max-width:1200px){
+    /*navbar*/
+.navbar li{
+    font-size: 15px;
+    font-weight: bold;
+    background-color: rgba(241, 232, 232, 0.466);
+    border-radius: 10px;
+}
     /*index*/
-    .mainIndex{
-       grid-template-columns: 1fr;
-       grid-template-rows: 1fr 2fr 2fr auto;
-       grid-template-areas: 
-       "header"
-       "main"
-       "main"
-       "footer"
-       ;
-   }
-   .banner h1{
-       font-size: 80px;
-       display: flex;
-       flex-direction: row;
-       justify-content: center;
-       margin-top: 20px;
-   }
-   .slogan h2{
-       font-size: 40px;
-   }
-   .slogan p{
-       font-size: 25px;
-   }
-   .novedades h2{
-       font-size: 40px;
-   }
-   .news h3{
-     font-size: 20px;
-   }
-   .news p{
-       font-size: 15px;
-   }
-   .news img{
-   width: 100px;
-   height: 100px;
-   }
-   /*servicios*/
-   .mainServicios{
-       grid-template-columns: 1fr;
-       grid-template-rows: 1fr 2fr 2fr auto;
-       grid-template-areas: 
-       "header"
-       "main"
-       "main"
-       "footer"
-       ;
-   }
-   .serviceBanner h1{
-       font-size: 40px
-   }
-   .servicios li{
-       margin-left: 3px;
-       font-size: 25px;
-       padding-top: 10px;    
-   }
-   .servicios{
-       width: 400px;
-       height: 200px;
-   }
-    .fearFree iframe{
-      max-width: 80%;
-      margin-top: 350px;
-   }
-   .pagos{
-       
-       margin-bottom: 100px;
-   }
+.mainIndex{
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 2fr 2fr auto;
+    grid-template-areas: 
+    "header"
+    "main"
+    "main"
+    "footer"
+    ;
+}
+.banner h1{
+    font-size: 80px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 20px;
+}
+.slogan h2{
+    font-size: 40px;
+}
+.slogan p{
+    font-size: 25px;
+}
+.novedades h2{
+    font-size: 40px;
+}
+.news h3{
+    font-size: 20px;
+}
+.news p{
+    font-size: 15px;
+}
+.news img{
+    width: 100px;
+    height: 100px;
+}
+/*servicios*/
+.mainServicios{
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 2fr 2fr auto;
+    grid-template-areas: 
+    "header"
+    "main"
+    "main"
+    "footer"
+    ;
+}
+.servicioBanner h1{
+    font-size: 40px
+}
+.servicios li{
+    margin-left: 3px;
+    font-size: 25px;
+    padding-top: 10px;    
+}
+.servicios{
+    width: 400px;
+    height: 200px;
+}
+.fearFree{
+    margin-top: 50px;
+    width: 50%;
+    
+}
+.fearFree iframe{
+    max-width: 90%;
+    margin-top: -120px;
+}
+.pagos{
+    margin-bottom: 100px;
+}
+/*Alimentos*/
+.mainAlimentos{
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 2fr 2fr auto;
+    grid-template-areas: 
+    "header"
+    "main"
+    "main"
+    "footer"
+    ;
+}
+.nutricion p{
+    font-size: 25px;
+}
+.food img{
+    width: 250px;
+    height: 250px;
+    margin-left: -80px;
+    padding: 30px;
+}
+.food p{
+    margin-left: -60px;
+}
+/*Accesorios*/
+.mainAccesorios{
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 2fr 2fr auto;
+    grid-template-areas: 
+    "header"
+    "main"
+    "main"
+    "footer"
+    ;
+}
+.bannerAccesorios h1{
+    font-size: 50px;
+    text-align: center;
+    margin-top: 80px;
+}
+.accesorios img{
+    margin-top: 200px;
+    width: 150px;
+    height: 150px;
+}
+.sectionOne{
+    display: flex;
+    justify-content: center;
+    margin-left: 10px;
+    margin-top: -30px;
+}
+
+/*Contacto*/
+.formulario{
+    margin-left: -200px;
+}
 }
 
 
@@ -484,7 +550,7 @@ footer{
         font-size: 35px;
     }
     .news h3{
-      font-size: 20px;
+    font-size: 20px;
     }
     .news p{
         font-size: 13px;
@@ -504,11 +570,11 @@ footer{
         "footer"
         ;
     }
-    .serviceBanner{
+    .servicioBanner{
         background-size: 150%;
     }
-    .serviceBanner h1{
-        font-size: 35px
+    .divServicios h1{
+        font-size: 30px
     }
     .servicios li{
         margin-left: 3px;
@@ -519,14 +585,89 @@ footer{
         width: 600px;
         height: 400px;
     }
-     .fearFree iframe{
-       max-width: 70%;
-       margin-top: 150px;
+    .fearFree iframe{
+    max-width: 70%;
+    margin-top: -400px;
     }
     .pagos{
-        
         margin-bottom: 100px;
     }
+    /*Alimentos*/
+    .divAlimentos h1{
+        font-size: 40px;
+    }
+    .mainAlimentos{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 2fr 2fr auto;
+        grid-template-areas: 
+        "header"
+        "main"
+        "main"
+        "footer"
+        ;
+    }
+    .nutricion p{
+        font-size: 20px;
+    }
+    .food{
+        flex-direction: column;
+        align-items: center;
+        
+    }
+    .raciones img{
+        margin-top: 15px;
+    }
+    /*Accesorios*/
+    .mainAccesorios{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 2fr 2fr auto;
+        grid-template-areas: 
+        "header"
+        "main"
+        "main"
+        "footer"
+        ;
+    }
+    .bannerAccesorios{
+        background-size: 150%;
+    }
+    .bannerAccesorios h1{
+        font-size: 40px;
+}
+
+.accesorios p{
+    font-size: 15px;
+}
+.sectionOne{
+    width: 70%;
+    margin-left: 100px;
+}
+
+/*Contacto*/
+.mainContacto{
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 2fr 2fr auto;
+    grid-template-areas: 
+    "header"
+    "main"
+    "main"
+    "footer"
+    ;
+}
+.contactBanner h1{
+    font-size: 40px;
+}
+.formulario{
+    margin-left: -400px;
+}
+
+.formulario p{
+    font-size: 15px;
+}
+.formulario input{
+    font-size: 12px;
+}
+
 }
 
 /* responsive 576px*/
@@ -580,11 +721,11 @@ footer{
         "footer"
         ;
     }
-    .serviceBanner{
+    .servicioBanner{
         background-size: 150%;
     }
     .serviceBanner h1{
-        font-size: 30px;
+        font-size: 25px;
         margin-top: 120px;
         color: rgb(199, 139, 28);
     }
@@ -592,6 +733,46 @@ footer{
         margin-left: 3px;
         font-size: 20px;
         padding-top: 10px;    
+    }
+    /*Alimentos*/
+    .divAlimentos h1{
+        font-size: 30px;
+    }
+    .mainAlimentos{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 2fr 2fr auto;
+        grid-template-areas: 
+        "header"
+        "main"
+        "main"
+        "footer"
+        ;
+    }
+    .nutricion p{
+        font-size: 18px;
+    }
+    .food{
+        flex-direction: column;
+        align-items: center;
+    }
+    .raciones img{
+        width: 160px;
+        height: 160px;
+        margin-top: 5px;
+    }
+    /*Contacto*/
+    .mainContacto{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 2fr 2fr auto;
+        grid-template-areas: 
+        "header"
+        "main"
+        "main"
+        "footer"
+        ;
+    }
+    .formulario{
+        margin-left: -500px;
     }
 }
 

@@ -1,0 +1,120 @@
+@media (max-width: 1200px) {
+    /*navbar*/
+.navbar li {
+    font-size: 15px;
+    font-weight: bold;
+    background-color: rgba(241, 232, 232, 0.466);
+    border-radius: 10px;
+    }
+    /*index*/
+.mainIndex {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 2fr 2fr auto;
+    grid-template-areas: "header" "main" "main" "footer";
+    }
+.banner h1 {
+    font-size: 80px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 20px;
+    }
+.slogan {
+    h2 {
+        font-size: 40px;
+    }
+    p {
+        font-size: 25px;
+    }
+    }
+.novedades h2 {
+    font-size: 40px;
+    }
+.news {
+    h3 {
+        font-size: 20px;
+    }
+    p {
+        font-size: 15px;
+    }
+    img {
+        width: 100px;
+        height: 100px;
+    }
+    }
+    /*servicios*/
+.mainServicios {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 2fr 2fr auto;
+    grid-template-areas: "header" "main" "main" "footer";
+    }
+.servicioBanner h1 {
+    font-size: 40px;
+    }
+.servicios {
+    li {
+        margin-left: 3px;
+        font-size: 25px;
+        padding-top: 10px;
+    }
+    width: 400px;
+    height: 200px;
+    }
+.fearFree {
+    margin-top: 50px;
+    width: 50%;
+    iframe {
+        max-width: 90%;
+        margin-top: -120px;
+    }
+    }
+.pagos {
+    margin-bottom: 100px;
+    }
+    /*Alimentos*/
+.mainAlimentos {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 2fr 2fr auto;
+    grid-template-areas: "header" "main" "main" "footer";
+    }
+.nutricion p {
+    font-size: 25px;
+    }
+.food {
+    img {
+        width: 250px;
+        height: 250px;
+        margin-left: -80px;
+        padding: 30px;
+    }
+    p {
+        margin-left: -60px;
+    }
+    }
+    /*Accesorios*/
+.mainAccesorios {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 2fr 2fr auto;
+    grid-template-areas: "header" "main" "main" "footer";
+    }
+.bannerAccesorios h1 {
+    font-size: 50px;
+    text-align: center;
+    margin-top: 80px;
+    }
+.accesorios img {
+    margin-top: 200px;
+    width: 150px;
+    height: 150px;
+    }
+.sectionOne {
+    display: flex;
+    justify-content: center;
+    margin-left: 10px;
+    margin-top: -30px;
+    }
+    /*Contacto*/
+.formulario {
+    margin-left: -200px;
+    }
+}

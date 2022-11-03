@@ -1,0 +1,17 @@
+footer {
+    ul li {
+    list-style: none;
+    display: inline-flex;
+    justify-content: right;
+    gap: 300px;
+    margin-right: 10px;
+    img {
+        width: 40px;
+        height: 40px;
+    }
+    }
+    background-color: rgba(165, 176, 179, 0.548);
+}
+.container {
+    text-align: center;
+}

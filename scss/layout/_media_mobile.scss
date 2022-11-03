@@ -1,0 +1,96 @@
+@media (max-width: 576px) {
+    /*index*/
+.mainIndex {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 2fr 2fr auto;
+    grid-template-areas: "header" "main" "main" "footer";
+    }
+.banner h1 {
+    font-size: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 5px;
+    }
+.slogan {
+    h2 {
+        font-size: 25px;
+    }
+    p {
+        font-size: 18px;
+    }
+    }
+.novedades h2 {
+    font-size: 25px;
+    }
+.news {
+    h3 {
+        font-size: 15px;
+    }
+    p {
+        font-size: 10px;
+    }
+    img {
+        width: 80px;
+        height: 60px;
+    }
+    }
+    /*servicios*/
+.divServicios {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 2fr 2fr auto;
+    grid-template-areas: "header" "main" "main" "footer";
+    }
+.servicioBanner {
+    background-size: 150%;
+    h1 {
+        font-size: 25px;
+        margin-top: 120px;
+        color: rgb(199, 139, 28);
+    }
+    }
+.servicios {
+    width: 100%;
+    }
+.mainServicios {
+    min-height: 100vh;
+    }
+.servicios li {
+    margin-left: 3px;
+    font-size: 20px;
+    padding-top: 10px;
+    }
+.pagos {
+    margin-top: -100px;
+    }
+    /*Alimentos*/
+.divAlimentos h1 {
+    font-size: 30px;
+    }
+.mainAlimentos {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 2fr 2fr auto;
+    grid-template-areas: "header" "main" "main" "footer";
+    }
+.nutricion p {
+    font-size: 18px;
+    }
+.food {
+    flex-direction: column;
+    align-items: center;
+    }
+.raciones img {
+    width: 160px;
+    height: 160px;
+    margin-top: 5px;
+    }
+    /*Contacto*/
+.mainContacto {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 2fr 2fr auto;
+    grid-template-areas: "header" "main" "main" "footer";
+    }
+.formulario {
+    margin-left: -500px;
+    }
+}

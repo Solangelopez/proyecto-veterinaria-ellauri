@@ -30,7 +30,7 @@ header {
 .banner {
   width: 100%;
   height: 100%;
-  background-image: url(../img/banner-originalC.jpg);
+  background-image: url(../img/banner-original.jpg);
   background-position: center;
   background-size: 150%;
   animation: movimiento 10s infinite linear alternate;
@@ -117,7 +117,7 @@ main {
 .servicioBanner {
   width: 100%;
   height: 100%;
-  background-image: url(../img/catVetC.jpg);
+  background-image: url(../img/catVet.jpg);
   background-position: center;
   background-size: 100%;
   grid-area: header; }
@@ -176,7 +176,7 @@ main {
 .foodBanner {
   width: 100%;
   height: 100%;
-  background-image: url(../img/petfoodC.jpg);
+  background-image: url(../img/petfood.jpg);
   background-position: center;
   background-size: cover;
   grid-area: header; }
@@ -209,23 +209,24 @@ main {
   color: beige;
   border: beige 1px solid; }
 
-.raciones img {
-  margin-top: 200px;
-  width: 200px;
-  height: 200px;
-  border-radius: 50%;
-  transition: all 0.2s ease;
-  padding: 0.5em;
-  cursor: pointer; }
-  .raciones img:hover {
-    height: 250px;
-    width: 250px; }
-
-.raciones p {
-  font-size: 20px;
-  font-family: "Inter+Tight", sans-serif;
-  color: beige;
-  text-align: center; }
+.raciones {
+  margin-top: -100px; }
+  .raciones img {
+    margin-top: 200px;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    transition: all 0.2s ease;
+    padding: 0.5em;
+    cursor: pointer; }
+    .raciones img:hover {
+      height: 220px;
+      width: 220px; }
+  .raciones p {
+    font-size: 20px;
+    font-family: "Inter+Tight", sans-serif;
+    color: beige;
+    text-align: center; }
 
 .food {
   display: flex;
@@ -238,7 +239,7 @@ main {
 .bannerAccesorios {
   width: 100%;
   height: 100%;
-  background-image: url(../img/accesorios1C.jpg);
+  background-image: url(../img/accesorios1.jpg);
   background-position: center;
   background-size: cover;
   grid-area: header; }
@@ -273,8 +274,8 @@ main {
   padding: 0.5em;
   cursor: pointer; }
   .accesorios img:hover {
-    height: 250px;
-    width: 250px; }
+    height: 220px;
+    width: 220px; }
 
 .accesorios p {
   font-size: 20px;
@@ -293,7 +294,7 @@ main {
 .contactBanner {
   width: 100%;
   height: 100%;
-  background-image: url(../img/vetContactC.jpg);
+  background-image: url(../img/vetContact.jpg);
   background-position: bottom;
   background-size: cover;
   grid-area: header; }
@@ -495,9 +496,10 @@ footer {
     font-size: 20px; }
   .food {
     flex-direction: column;
-    align-items: center; }
+    align-items: center;
+    margin: auto; }
   .raciones img {
-    margin-top: 15px; }
+    margin-top: 80px; }
   /*Accesorios*/
   .mainAccesorios {
     grid-template-columns: 1fr;
@@ -592,7 +594,7 @@ footer {
   .raciones img {
     width: 160px;
     height: 160px;
-    margin-top: 5px; }
+    margin-top: 70px; }
   /*Accesorios*/
   .bannerAccesorios {
     background-size: 200%; }

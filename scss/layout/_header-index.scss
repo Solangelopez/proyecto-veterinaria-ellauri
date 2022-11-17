@@ -35,8 +35,7 @@ padding: 0.5em;
     height: 100%;
     background-image: url(../img/banner-original.jpg);
     background-position: center;
-    background-size: 150%;
-    animation: movimiento 10s infinite linear alternate;
+    background-size: 140%;
     grid-area: header;
 }
 @keyframes movimiento {

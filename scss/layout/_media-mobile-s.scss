@@ -3,15 +3,15 @@
 .novedades {
     display: none;
 }    
-    /*Contacto*/
-.mainContacto {
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 2fr 2fr auto;
-    grid-template-areas: "header" "main" "main" "footer";
+    /*Servicios*/ 
+    .gif{
+        margin-left: 250px;
+        margin-top: -200px;
     }
-.formulario {
-    margin: auto;
+    .pagos{
+        margin-top: 150px;
     }
+
     /*Alimentos*/
 .food{
     margin-left: 5rem;
@@ -20,5 +20,14 @@
 .sectionOne {
     width: 50%;
     margin-left: 100px;
+        }
+/*Contacto*/
+    .mainContacto {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 2fr 2fr auto;
+        grid-template-areas: "header" "main" "main" "footer";
+        }
+    .formulario {
+        margin: auto;
         }
 }

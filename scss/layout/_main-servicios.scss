@@ -13,7 +13,7 @@
     grid-area: footer;
 }
 .servicios li {
-    list-style: circle;
+    list-style: none;
     padding-top: 30px;
     color: $colorFuente;
     font-size: 30px;
@@ -22,9 +22,10 @@
     margin-left: 200px;
     margin-top: 30px;
 }
-.fearFree {
+.gif {
+    width: 30%;
     position: relative;
-    margin-left: 50%;
+    margin-left: 60%;
     margin-top: -500px;
     margin-bottom: 300px;
 }

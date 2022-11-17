@@ -11,14 +11,14 @@
 }
 .mainContacto {
     grid-area: main;
-}
+} 
 .formulario {
     width: 300px;
     height: 1200px;
+    margin: auto;
     text-align: center;
     padding-top: 20px;
-    position: relative;
-    right: -650px;
+    
     p {
     font-size: 25px;
     color: $colorFuente;

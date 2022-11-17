@@ -1,13 +1,5 @@
-/*@mixin medidas-img ($width, $height, $margin-top, $border-radius){
-    width: $width;
-    height: $height;
-    margin-top: $margin-top;
-    border-radius: $border-radius;
-}*/
 @mixin medidasImg {
     width: 200px;
     height: 200px;
     border-radius: 50%;
-
-    
 }

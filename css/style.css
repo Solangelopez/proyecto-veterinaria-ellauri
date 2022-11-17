@@ -1,9 +1,3 @@
-/*@mixin medidas-img ($width, $height, $margin-top, $border-radius){
-    width: $width;
-    height: $height;
-    margin-top: $margin-top;
-    border-radius: $border-radius;
-}*/
 @import url("https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@1,200&family=Montserrat:ital,wght@1,500&display=swap");
 * {
   margin: 0;
@@ -36,7 +30,7 @@ header {
 .banner {
   width: 100%;
   height: 100%;
-  background-image: url(../img/banner-original.jpg);
+  background-image: url(../img/banner-originalC.jpg);
   background-position: center;
   background-size: 150%;
   animation: movimiento 10s infinite linear alternate;
@@ -123,7 +117,7 @@ main {
 .servicioBanner {
   width: 100%;
   height: 100%;
-  background-image: url(../img/catVet.jpg);
+  background-image: url(../img/catVetC.jpg);
   background-position: center;
   background-size: 100%;
   grid-area: header; }
@@ -182,7 +176,7 @@ main {
 .foodBanner {
   width: 100%;
   height: 100%;
-  background-image: url(../img/petfood.jpg);
+  background-image: url(../img/petfoodC.jpg);
   background-position: center;
   background-size: cover;
   grid-area: header; }
@@ -219,7 +213,13 @@ main {
   margin-top: 200px;
   width: 200px;
   height: 200px;
-  border-radius: 50%; }
+  border-radius: 50%;
+  transition: all 0.2s ease;
+  padding: 0.5em;
+  cursor: pointer; }
+  .raciones img:hover {
+    height: 250px;
+    width: 250px; }
 
 .raciones p {
   font-size: 20px;
@@ -238,7 +238,7 @@ main {
 .bannerAccesorios {
   width: 100%;
   height: 100%;
-  background-image: url(../img/accesorios1.webp);
+  background-image: url(../img/accesorios1C.jpg);
   background-position: center;
   background-size: cover;
   grid-area: header; }
@@ -268,7 +268,13 @@ main {
   margin-top: 100px;
   width: 200px;
   height: 200px;
-  border-radius: 50%; }
+  border-radius: 50%;
+  transition: all 0.2s ease;
+  padding: 0.5em;
+  cursor: pointer; }
+  .accesorios img:hover {
+    height: 250px;
+    width: 250px; }
 
 .accesorios p {
   font-size: 20px;
@@ -287,7 +293,7 @@ main {
 .contactBanner {
   width: 100%;
   height: 100%;
-  background-image: url(../img/vetContact.webp);
+  background-image: url(../img/vetContactC.jpg);
   background-position: bottom;
   background-size: cover;
   grid-area: header; }
@@ -316,10 +322,9 @@ main {
 .formulario {
   width: 300px;
   height: 1200px;
+  margin: auto;
   text-align: center;
-  padding-top: 20px;
-  position: relative;
-  right: -650px; }
+  padding-top: 20px; }
   .formulario p {
     font-size: 25px;
     color: beige;
@@ -431,7 +436,7 @@ footer {
     margin-top: -30px; }
   /*Contacto*/
   .formulario {
-    margin-left: -200px; } }
+    margin: auto; } }
 
 @media (max-width: 768px) {
   /*index*/
@@ -515,7 +520,7 @@ footer {
   .contactBanner h1 {
     font-size: 40px; }
   .formulario {
-    margin-left: -400px; }
+    margin: auto; }
     .formulario p {
       font-size: 15px; }
     .formulario input {
@@ -589,7 +594,7 @@ footer {
     grid-template-rows: 1fr 2fr 2fr auto;
     grid-template-areas: "header" "main" "main" "footer"; }
   .formulario {
-    margin-left: -500px; } }
+    margin: auto; } }
 
 @media (max-width: 425px) {
   /*Contacto*/
@@ -598,4 +603,4 @@ footer {
     grid-template-rows: 1fr 2fr 2fr auto;
     grid-template-areas: "header" "main" "main" "footer"; }
   .formulario {
-    margin-left: -600px; } }
+    margin: auto; } }

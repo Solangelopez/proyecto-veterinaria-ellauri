@@ -23,6 +23,13 @@
     img {
     margin-top: 200px;
     @include medidasImg;
+    transition: all 0.2s ease;
+    &:hover {
+        height: 250px;
+        width: 250px;
+    }
+    padding: 0.5em;
+    cursor: pointer;
     }
     p {
     font-size: 20px;

@@ -1,4 +1,8 @@
 @media (max-width: 425px) {
+    /*Index*/ 
+.novedades {
+    display: none;
+}    
     /*Contacto*/
 .mainContacto {
     grid-template-columns: 1fr;
@@ -8,4 +12,13 @@
 .formulario {
     margin: auto;
     }
+    /*Alimentos*/
+.food{
+    margin-left: 5rem;
+}   
+    /*Accesorios*/ 
+.sectionOne {
+    width: 50%;
+    margin-left: 100px;
+        }
 }
